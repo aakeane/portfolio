@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@import "_variables";
+
+// General Styles
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.btn-outline {
+  border: 2px solid #fff;
+  border-radius: 35px;
+  text-transform: uppercase;
+  padding: 7px 25px;
+  letter-spacing: 10px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    box-shadow: $button-glow;
+  }
+}
+.btn-primary {
+  padding: 10px 15px;
+  background: linear-gradient(to bottom right, $blue-gradient-main);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  transition: box-shadow 0.25s ease-in-out;
+  &:hover {
+    box-shadow: $button-glow;
+  }
+}
+
+// Landing Page
+#landing-section {
+  height: 90vh;
+}
+
+// Landing page video
+.showcase {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.video-container:after {
+  content: "";
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(14, 72, 134, 0.575);
+  position: absolute;
+}
+.content {
+  z-index: 2;
+}
+
+// Navbar
+.navbar,
+.navbar-nav {
+  z-index: 3;
+}
+.navbar {
+  background: linear-gradient(to bottom right, $blue-gradient-opaque);
+  min-height: 50px;
+  border-bottom: 2px solid rgba(1, 28, 65, 0.8);
+}
+.navbar-toggler:focus {
+  color: #fff;
+}
+
+// Projects
+.card {
+  border-bottom-right-radius: 40px;
+  background: linear-gradient(to bottom right, #fff, #eff9ff, #bee6ff);
+  border: none;
+}
+.card-text {
+  font-size: 1.1rem;
+}
+
+// About me
+#about-me {
+  background: linear-gradient(to bottom right, $light-blue-gradient);
+  border-top: #015fd10e 2px solid;
+  border-bottom: #015fd170 2px solid;
+  padding-bottom: 100px;
+}
+#about-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+// Skills Section
+// Skill icons gradient
+@mixin fa-gradient($skill-color, $skill-dark) {
+  background: linear-gradient(135deg, ($skill-color), ($skill-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.html-icon {
+  @include fa-gradient(#ff0000, #3f0000);
+}
+.css-icon {
+  @include fa-gradient(#0000ff, #00004c);
+}
+.js-icon {
+  @include fa-gradient(#ffe700, #b4a200);
+}
+.sass-icon {
+  @include fa-gradient(#ff4da6, #7a2d56);
+}
+.git-icon {
+  @include fa-gradient(#ff9a00, #aa6600);
+}
+.bootstrap-icon {
+  @include fa-gradient(#a300ff, #350053);
+}
+
+// Contact Section
+#contact-head {
+  background: linear-gradient(to bottom right, $light-blue-gradient);
+  border-top: #015fd10e 2px solid;
+  border-bottom: #0457be 2px solid;
+  padding-bottom: 100px;
+}
+
+// Footer
+#footer {
+  background: linear-gradient(to bottom right, $blue-gradient-main);
+}
+
+// Media queries
+@media (max-width: 768px) {
+  .m-resp {
+    margin: 3rem 0;
+  }
+  .mb-resp {
+    margin: 2rem 0;
+  }
+}
