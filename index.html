@@ -79,7 +79,7 @@
           <h1 class="display-1 text-center p-5">Projects</h1>
           <div class="row">
             
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-xl-4">
               <div class="card m-4" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-once="true">
                 <img src="./images/country-app.png" class="card-img-top border border-1 border-muted" alt="..." />
                 <div class="card-body text-center">
@@ -94,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-xl-4">
               <div class="card m-4" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">
                 <img src="./images/expert-accounts.png" class="card-img-top border border-1 border-muted" alt="..." />
                 <div class="card-body text-center">
@@ -109,7 +109,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-xl-4">
               <div class="card m-4" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-once="true">
                 <img src="./images/advice-app.png" class="card-img-top border border-1 border-muted" alt="..." />
                 <div class="card-body text-center">
@@ -121,6 +121,21 @@
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#third-modal">
                     More info
                     </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4 offset-xl-4">
+              <div class="card m-4" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">
+                <img src="./images/todolist.png" class="card-img-top border border-1 border-muted" alt="..." />
+                <div class="card-body text-center">
+                  <h2 class="card-title mb-4">To-Do List - PHP & MySQL</h2>
+                  <p class="card-text">
+                    A simple to-do list allowing users to add and delete tasks stored in a database, constructed using PHP & MySQL.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fourth-modal">
+                  More info
+                  </button>
                 </div>
               </div>
             </div>
@@ -201,15 +216,38 @@
           </div>
         </div>
       </div>
+      <!-- Modal 4 TO-DO LIST-->
+      <div class="modal fade" id="fourth-modal" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="modal4">To-Do List - PHP & MySQL</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="./images/todolist.png" alt="">
+              <hr>
+              <h3>About project</h3>
+              <p>I built this project after studying PHP and MySQL for a few days to cement my knowledge of the fundamentals of this skillset. In a previous project (Country Search App) I used local storage only, this time I effectively utilized MySQL to integrate my project with a database. 
+              </p>
+              <h3>What I would improve...</h3>
+              <p>This is only a bare-bones project therefore I have lots of ideas about functionalities I would like to implement or improve. Firstly I'd like to add an update feature allowing current tasks to be edited, also filtering/searching and displaying custom task searches from the database. I could also sort tasks in more creative ways or set priorities of tasks. Many options, many of which I will be working on in the coming week.</p>
+              <div class="modal-footer d-flex justify-content-around">
+                <a class="btn btn-primary text-center" href="https://github.com/aakeane/to-do-list" target="_blank">Go to Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
-      <!-- ABOUT ME -->
+    <!-- ABOUT ME -->
     <div id="about-me">
       <div id="about" class="mb-0 container"> 
         <div class="pt-5"></div>
         <h1 class="display-1 text-center p-5 text-black">About me</h1>
         <p id="about-text"class="lead text-center">
-        I’m a self-taught developer who was inspired to delve into coding after taking a basic course on Udemy. Since then I have been enjoying building user-friendly sites and web apps with good design principles. I’m currently working on learning React JS as I’m always looking to progress my skills and stay up to date with the latest web dev trends and technology. My previous experience as an English language teacher has allowed me to greatly improve my soft skills, which I hope to apply to a team in my next opportunity as a junior front-end developer.</p>
+        I’m a self-taught developer who was inspired to delve into coding after taking a basic course on Udemy. Since then I have been enjoying building user-friendly sites and web apps with good design principles. I’m currently working on learning PHP and MySQL to understand more about the backend of web-development and because I’m always looking to progress my skills. My previous experience as an English language teacher has allowed me to greatly improve my soft skills, which I hope to apply to a team in my next opportunity as a junior front-end developer.</p>
       </div>
     </div>
 
@@ -220,37 +258,45 @@
         <h1 class="display-1 text-center p-5">Skills</h1>
         <div class="container text-center">
           <div class="row">
-            <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-1" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <i class="fab fa-html5 fa-5x html-icon"></i>
               <p class="pt-3 mb-5 fs-5">HTML</p>
             </div>
-            <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <i class="fab fa-css3-alt fa-5x css-icon"></i>
               <p class="pt-3 mb-5 fs-5">CSS</p>
             </div>
-            <div class="col-6 offset-sm-3 offset-md-0 col-md-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 offset-sm-3 offset-md-0 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <i class="fab fa-js-square fa-5x js-icon"></i>
               <p class="pt-3 mb-5 fs-5">Javascript</p>
             </div>
-            <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <img class="pb-3" src="./images/jquery.png" alt="">
               <p class="pt-3 mb-5 fs-5">jQuery</p>
             </div>
-            <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <i class="fab fa-sass fa-5x sass-icon"></i>
               <p class="pt-3 mb-5 fs-5">Sass</p>
             </div>
-            <div class="col-6 offset-sm-3 offset-md-0 col-md-3" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 offset-sm-3 offset-md-0 col-md-3 col-xl-2 offset-xl-1" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <img class="pb-4" src="./images/materialize.png" alt="">
               <p class="pt-4 mb-5 fs-5">Materialize</p>
             </div>
-            <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
               <i class="fab fa-git-alt fa-5x git-icon"></i>
               <p class="pt-3 mb-5 fs-5">Git</p>
             </div>
-            <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
-              <i class="fab fa-bootstrap fa-5x bootstrap-icon"></i>
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+              <i class="fab fa-bootstrap fa-4x bootstrap-icon"></i>
               <p class="pt-3 mb-5 fs-5">Bootstrap</p>
+            </div>
+            <div class="col-6 col-md-3 offset-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+              <i class="fab fa-php fa-5x php-icon"></i>
+              <p class="pt-3 mb-5 fs-5">PHP</p>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2 offset-xl-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+              <i class="fas fa-database fa-4x mysql-icon"></i>
+              <p class="pt-3 mb-5 fs-5">MySQL</p>
             </div>
           </div>
         </div>

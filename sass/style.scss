@@ -143,6 +143,12 @@ body {
 .bootstrap-icon {
   @include fa-gradient(#a300ff, #350053);
 }
+.php-icon {
+  @include fa-gradient(#008cff, #004883);
+}
+.mysql-icon {
+  @include fa-gradient(#cf811c, #367fa1);
+}
 
 // Contact Section
 #contact-head {

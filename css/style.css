@@ -130,6 +130,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.php-icon {
+  background: linear-gradient(135deg, #008cff, #004883);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.mysql-icon {
+  background: linear-gradient(135deg, #cf811c, #367fa1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 #contact-head {
   background: linear-gradient(to bottom right, #eff9ff, #bee6ff, #93dbff);
   border-top: #015fd10e 2px solid;
